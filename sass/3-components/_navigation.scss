@@ -1,0 +1,62 @@
+.navigation {
+    @include displayFlex(row, center, space-between);
+    height: 5rem;
+    padding: 0 5rem;
+
+    &__logo {
+        text-decoration: none;
+        color: $white;
+        font-size: 1.75rem;
+    }
+
+    &__wrapper {
+        @include displayFlex(row, center, flex-end);
+    }
+
+    &__list {
+        @include displayFlex(row, center, center);
+        list-style: none;
+
+        &Item {
+            margin: 0 1rem;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .social-media__list {
+        @include displayFlex(row, center, center);
+        list-style: none;
+        margin: 0 1rem 0 2rem;
+
+        &Item {
+            margin: 0 .65rem;
+            height: 100%;
+            @include displayFlex(row, center, center);
+
+            img {
+                height: 1rem;
+            }
+
+            &:first-child {
+                img {
+                    height: 1.15rem;
+                    margin-top: .2rem;
+                }
+            }
+        }
+    }
+
+    .contact-button {
+        color: $white;
+        background-color: darken(orange, 5%);
+        font-size: 1rem;
+        padding: .65rem 1.5rem;
+        border-radius: 5rem;
+        text-decoration: none;
+    }
+}

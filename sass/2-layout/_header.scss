@@ -1,0 +1,17 @@
+.header {
+    background: url("https://jevelin.shufflehound.com/digital-media-agency/wp-content/uploads/sites/25/2019/03/DMA-gif3-compressor-compressor.gif?id=84");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    &__heading {
+        text-align: center;
+        margin-top: 12.5rem;
+
+        h1 {
+            color: $white;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+    }
+}

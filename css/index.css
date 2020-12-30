@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.header {
+  background: url("https://jevelin.shufflehound.com/digital-media-agency/wp-content/uploads/sites/25/2019/03/DMA-gif3-compressor-compressor.gif?id=84");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.header__heading {
+  text-align: center;
+  margin-top: 12.5rem;
+}
+.header__heading h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 5rem;
+}
+.navigation__logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.75rem;
+}
+.navigation__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.navigation__listItem {
+  margin: 0 1rem;
+}
+.navigation__listItem a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navigation .social-media__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0 1rem 0 2rem;
+}
+.navigation .social-media__listItem {
+  margin: 0 0.65rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navigation .social-media__listItem img {
+  height: 1rem;
+}
+.navigation .social-media__listItem:first-child img {
+  height: 1.15rem;
+  margin-top: 0.2rem;
+}
+.navigation .contact-button {
+  color: #fff;
+  background-color: #e69500;
+  font-size: 1rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 5rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */
