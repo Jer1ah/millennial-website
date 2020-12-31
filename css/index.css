@@ -10,6 +10,7 @@ html {
 
 body {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -25,7 +26,17 @@ body {
 .header__heading h1 {
   color: #fff;
   font-size: 3.5rem;
+  font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.map {
+  width: 75rem;
+  margin: -10rem auto 5rem;
+  height: 40rem;
+  background-color: #6173F1;
+  border-radius: 0.5rem;
 }
 
 .navigation {
@@ -40,6 +51,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 1.75rem;
+  font-weight: 600;
 }
 .navigation__wrapper {
   display: flex;
@@ -61,6 +73,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 500;
 }
 .navigation .social-media__list {
   display: flex;
@@ -87,9 +100,10 @@ body {
 }
 .navigation .contact-button {
   color: #fff;
-  background-color: #e69500;
+  background-color: #E69B59;
   font-size: 1rem;
-  padding: 0.65rem 1.5rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
   border-radius: 5rem;
   text-decoration: none;
 }
