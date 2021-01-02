@@ -132,6 +132,38 @@ body {
   margin-left: 0.75rem;
 }
 
+.services__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  margin: 10rem auto 7.5rem;
+}
+.services__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 22%;
+  text-align: center;
+}
+.services__listItem img {
+  width: 3.5rem;
+}
+.services__listItem h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.9;
+  margin: 2rem 0 1rem;
+}
+.services__listItem p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  opacity: 0.85;
+  line-height: 1.5rem;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;

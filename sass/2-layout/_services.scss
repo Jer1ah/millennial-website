@@ -1,0 +1,31 @@
+.services {
+    &__list {
+        @include displayFlex(row, center, space-between);
+        width: 75rem;
+        margin: 10rem auto 7.5rem;
+    }
+
+    &__listItem {
+        @include displayFlex(column, center, flex-start);
+        width: 22%;
+        text-align: center;
+
+        img {
+            width: 3.5rem;
+        }
+
+        h5 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            opacity: .9;
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            font-size: .9rem;
+            font-weight: 300;
+            opacity: .85;
+            line-height: 1.5rem;
+        }
+    }
+}
