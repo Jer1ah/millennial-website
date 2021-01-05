@@ -244,6 +244,62 @@ body {
   text-align: right;
 }
 
+.projects__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: flex-start;
+  width: 75rem;
+  max-width: 90%;
+  margin: 5rem auto;
+}
+.projects__header {
+  background-color: #6173F1;
+  text-align: center;
+  width: 30%;
+}
+.projects__header h2 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  margin-top: 5rem;
+}
+.projects__list-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70%;
+}
+.projects__list-even {
+  width: 50%;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.projects__list-odd {
+  width: 50%;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+.projects__listItem {
+  width: 100%;
+  transform: scale(1.15);
+  overflow: hidden;
+}
+.projects__listItem img {
+  width: 100%;
+}
+.projects .even {
+  height: 30rem;
+}
+.projects .odd {
+  height: 20rem;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,62 @@
+.projects {
+    &__wrapper {
+        @include displayFlex(row, space-between, flex-start);
+        width: 75rem;
+        max-width: 90%;
+        margin: 5rem auto;
+    }
+
+    &__header {
+        background-color: $main-purple;
+        text-align: center;
+        width: 30%;
+        
+        h2 {
+            color: $white;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: .1rem;
+            margin-top: 5rem;
+        }
+    }
+
+    &__list {
+        &-wrapper {
+            @include displayFlex(row, flex-start, flex-start);
+            width: 70%;
+        }
+
+        &-even {
+            width: 50%;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        &-odd {
+            width: 50%;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+    }
+
+    &__listItem {
+        width: 100%;
+        transform: scale(1.15);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .even {
+        height: 30rem;
+    }
+
+    .odd {
+        height: 20rem;
+    }
+}
