@@ -1,0 +1,78 @@
+.blog {
+    padding: .1rem;
+    margin-top: 10rem;
+
+    &__header {
+        text-align: center;
+
+        h2 {
+            font-size: 2.75rem;
+            text-transform: uppercase;
+            color: lighten(black, 20%);
+            letter-spacing: .1rem;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 1.35rem;
+            font-weight: 300;
+            margin-top: .25rem;
+        }
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, space-between);
+        padding: 0;
+        list-style: none;
+        width: 75rem;
+        margin: 5rem auto;
+    }
+
+    &__listItem {
+        width: 30%;
+        border: .1rem solid lighten(gray, 25%);
+
+        img {
+            width: 100%;
+        }
+
+        &-info {
+            padding: 2rem 2.5rem;
+
+            span {
+                @include displayFlex(row, center, flex-start);
+
+                h5 {
+                    font-size: .85rem;
+                    font-weight: 300;
+                }
+
+                h5:first-child {
+                    margin-right: 1.25rem;
+                }
+            }
+
+            h3 {
+                font-size: 1.65rem;
+                margin: .65rem 0;
+                font-weight: 900;
+                letter-spacing: .1rem;
+                color: lighten(black, 15%);
+            }
+
+            p {
+                font-size: .85rem;
+                line-height: 1.5rem;
+                color: lighten(black, 20%);
+                font-weight: 300;
+            }
+        }
+
+        &-line {
+            height: .01rem;
+            width: 70%;
+            background-color: lighten(gray, 25%);
+            margin-bottom: 2.5rem;
+        }
+    }
+}

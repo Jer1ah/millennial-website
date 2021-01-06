@@ -300,6 +300,78 @@ body {
   height: 20rem;
 }
 
+.blog {
+  padding: 0.1rem;
+  margin-top: 10rem;
+}
+.blog__header {
+  text-align: center;
+}
+.blog__header h2 {
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  color: #333333;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+}
+.blog__header p {
+  font-size: 1.35rem;
+  font-weight: 300;
+  margin-top: 0.25rem;
+}
+.blog__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  width: 75rem;
+  margin: 5rem auto;
+}
+.blog__listItem {
+  width: 30%;
+  border: 0.1rem solid silver;
+}
+.blog__listItem img {
+  width: 100%;
+}
+.blog__listItem-info {
+  padding: 2rem 2.5rem;
+}
+.blog__listItem-info span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.blog__listItem-info span h5 {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.blog__listItem-info span h5:first-child {
+  margin-right: 1.25rem;
+}
+.blog__listItem-info h3 {
+  font-size: 1.65rem;
+  margin: 0.65rem 0;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  color: #262626;
+}
+.blog__listItem-info p {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  color: #333333;
+  font-weight: 300;
+}
+.blog__listItem-line {
+  height: 0.01rem;
+  width: 70%;
+  background-color: silver;
+  margin-bottom: 2.5rem;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
