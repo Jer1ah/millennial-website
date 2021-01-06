@@ -1,0 +1,40 @@
+.newsletter {
+    background: url('https://jevelin.shufflehound.com/digital-media-agency/wp-content/uploads/sites/25/2019/03/Group-1022.jpg?id=333');
+    background-position: center;
+    background-size: cover;
+    width: 75rem;
+    margin: 3rem auto;
+
+    &__wrapper {
+        @include displayFlex(row, center, space-between);
+        width: 88%;
+        padding: 5rem 0;
+        margin: 0 auto;
+
+        h3 {
+            color: $white;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            line-height: 2.5rem;
+            letter-spacing: .1rem;
+        }
+
+        input {
+            border: none;
+            padding: 1.25rem 0;
+            width: 30rem;
+            border-radius: 7.5rem;
+            text-indent: 2rem;
+        }
+
+        button {
+            background-color: $main-green;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1.15rem 2.25rem;
+            border-radius: 7.5rem;
+            border: none;
+        }
+    }
+}
