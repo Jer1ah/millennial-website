@@ -437,6 +437,86 @@ body {
   color: #333333;
 }
 
+.contact {
+  background-image: url("https://jevelin.shufflehound.com/digital-media-agency/wp-content/uploads/sites/25/2019/03/Group-102-copy222.jpg?id=328");
+  background-size: cover;
+  background-position: center;
+}
+.contact__wrapper {
+  width: 85%;
+  margin: 5rem auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__info h3 {
+  color: #fff;
+  font-size: 3.35rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.contact__info p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.contact__form {
+  width: 40%;
+}
+.contact__form form {
+  width: 100%;
+}
+.contact__form form input {
+  background: transparent;
+  border: 0.1rem solid #fff;
+  border-radius: 0.15rem;
+  width: 48%;
+  height: 2.5rem;
+  text-indent: 0.5rem;
+}
+.contact__form form input::placeholder {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.contact__form form textarea {
+  background: transparent;
+  border: 0.1rem solid #fff;
+  border-radius: 0.15rem;
+  width: 100%;
+  height: 7.5rem;
+  padding-top: 0.5rem;
+  text-indent: 0.5rem;
+}
+.contact__form form textarea::placeholder {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-family: "Roboto", sans-serif;
+}
+.contact__form form button {
+  border: none;
+  background-color: #41D096;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.15rem;
+  margin-top: 0.5rem;
+}
+.contact .form__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
