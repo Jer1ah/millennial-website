@@ -5,7 +5,7 @@
 
     &__wrapper {
         width: 85%;
-        margin: 5rem auto;
+        margin: 5rem auto 0;
         padding: 5rem 0;
         @include displayFlex(row, center, space-between);
     }
