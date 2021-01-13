@@ -26,6 +26,11 @@
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 500;
+                transition: all .15s;
+
+                &:hover {
+                    color: $main-orange;
+                }
             }
         }
     }
@@ -42,6 +47,11 @@
 
             img {
                 height: 1rem;
+
+                &:hover {
+                    cursor: pointer;
+                    fill: purple;
+                }
             }
 
             &:first-child {
@@ -58,8 +68,14 @@
         background-color: $main-orange;
         font-size: 1rem;
         font-weight: 500;
-        padding: .75rem 1.5rem;
+        padding: .55rem 1.3rem;
         border-radius: 5rem;
         text-decoration: none;
+        transition: all .15s;
+        border: solid $main-orange .2rem;
+
+        &:hover {
+            background-color: transparent;
+        }
     }
 }

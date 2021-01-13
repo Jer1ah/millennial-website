@@ -85,9 +85,14 @@
             height: 4rem;
             width: 4rem;
             border-radius: 50%;
+            transition: all .15s;
 
             img {
                 width: 1rem;
+            }
+
+            &:hover {
+                background-color: darken($white, 10%);
             }
         }
 

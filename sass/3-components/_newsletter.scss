@@ -25,6 +25,7 @@
             width: 30rem;
             border-radius: 7.5rem;
             text-indent: 2rem;
+            outline: none;
         }
 
         button {
@@ -35,6 +36,13 @@
             padding: 1.15rem 2.25rem;
             border-radius: 7.5rem;
             border: none;
+            transition: all .15s;
+            outline: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: darken($main-green, 10%);
+            } 
         }
     }
 }
