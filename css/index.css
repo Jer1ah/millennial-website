@@ -705,7 +705,24 @@ body {
 .navigation .contact-button:hover {
   background-color: transparent;
 }
+.navigation .mobile-menu {
+  display: none;
+}
+.navigation .mobile-menu img {
+  width: 2.2rem;
+}
 
+@media (max-width: 1000px) {
+  .navigation__list {
+    display: none;
+  }
+  .navigation .social-media__list {
+    display: none;
+  }
+  .navigation .contact-button {
+    display: none;
+  }
+}
 .newsletter {
   background: url("https://jevelin.shufflehound.com/digital-media-agency/wp-content/uploads/sites/25/2019/03/Group-1022.jpg?id=333");
   background-position: center;
