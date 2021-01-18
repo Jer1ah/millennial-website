@@ -2,6 +2,7 @@
     &__list {
         @include displayFlex(row, center, space-between);
         width: 75rem;
+        max-width: 90%;
         margin: 10rem auto 7.5rem;
     }
 
@@ -26,6 +27,32 @@
             font-weight: 300;
             opacity: .85;
             line-height: 1.5rem;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 875px) {
+    .services {
+        &__list {
+            flex-wrap: wrap;
+        }
+
+        &__listItem {
+            width: 45%;
+            margin-bottom: 3.5rem;
+        }
+    }
+}
+
+@media(max-width: 725px) {
+    .services {
+        &__listItem {
+            width: 100%;
+
+            p {
+                width: 65%;
+            }
         }
     }
 }

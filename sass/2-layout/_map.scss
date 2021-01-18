@@ -1,6 +1,7 @@
 .map {
     width: 75rem;
-    margin: -10rem auto 5rem;
+    max-width: 90%;
+    margin: -12rem auto 5rem;
     background-color: $main-purple;
     border-radius: .5rem;
     padding: 7.5rem 0;
@@ -101,6 +102,35 @@
             font-size: .9rem;
             font-weight: 400;
             margin-left: .75rem;
+        }
+    }
+}
+
+//media queries 
+@media(max-width: 900px) {
+    .map .tour-button {
+        display: none;
+    }
+
+    .map {
+        &__wrapper {
+            height: auto;
+        }
+
+        &__start {
+            margin-bottom: 5rem;
+
+            p {
+                width: 100%;
+            }
+        }
+
+        &__end {
+            align-self: flex-start;
+
+            p {
+                width: 100%;
+            }
         }
     }
 }

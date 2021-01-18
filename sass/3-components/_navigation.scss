@@ -104,7 +104,6 @@
 
         &__list {
             visibility: hidden;
-            transition: all .05s;
         }
 
         .social-media__list {
@@ -112,7 +111,6 @@
         }
 
         .contact-button {
-            transition: all .05s;
             visibility: hidden;
         }
 
@@ -132,6 +130,7 @@
             top: -2rem;
             z-index: 2;
             transition: all .35s;
+            overflow: hidden;
         }
     }
 }
