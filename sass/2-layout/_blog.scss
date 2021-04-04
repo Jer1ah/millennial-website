@@ -25,6 +25,7 @@
         padding: 0;
         list-style: none;
         width: 75rem;
+        max-width: 90%;
         margin: 5rem auto;
         position: relative;
     }
@@ -40,7 +41,7 @@
         }
 
         &-info {
-            padding: 2rem 2.5rem;
+            padding: 2rem 2.5rem 3.5rem;
 
             span {
                 @include displayFlex(row, center, flex-start);
@@ -81,12 +82,56 @@
             height: .01rem;
             width: 70%;
             background-color: $main-gray;
-            margin-bottom: 2.5rem;
+            margin-top: 1.5rem;
         }
 
         &:hover {
             transform: translateZ(0);
             box-shadow: 0px 0px 3px 0px #DADADA;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 1075px) {
+    .blog {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__listItem {
+            margin-bottom: 2.5rem;
+            width: 100%;
+            display: flex;
+
+            img {
+                width: 50%;
+            }
+
+            &-info {
+                width: 50%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 775px) {
+    .blog {
+        &__listItem {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+
+            &-info {
+                width: 100%;
+            }
         }
     }
 }
