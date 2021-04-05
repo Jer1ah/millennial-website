@@ -5,8 +5,9 @@
     &__wrapper {
         @include displayFlex(row, flex-start, space-between);
         width: 70rem;
+        max-width: 90%;
         margin: 5rem auto;
-    }
+      }
 
     &__about {
         h3 {
@@ -96,6 +97,19 @@
             color: $main-gray;
             margin: 1.25rem auto;
             font-size: 1rem;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 1000px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__about, &__navigation {
+            margin-bottom: 2.5rem;
         }
     }
 }

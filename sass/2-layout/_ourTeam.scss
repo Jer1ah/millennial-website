@@ -23,6 +23,7 @@
     &__list {
         @include displayFlex(row, flex-start, space-between);
         width: 70rem;
+        max-width: 90%;
         margin: 5rem auto 5rem;
         padding: 0;
         list-style: none;
@@ -53,6 +54,35 @@
             font-weight: 300;
             line-height: 1.45rem;
             color: lighten($black, 20%);
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+    .ourTeam__listItem {
+        width: 29%;
+    }
+}
+
+@media(max-width: 750px) {
+    .ourTeam {
+        &__list {
+            flex-direction: column;
+        }
+
+        &__listItem {
+            width: 100%;
+            @include displayFlex(row, flex-start, flex-start);
+            margin-bottom: 2rem;
+
+            img {
+                width: 40%;
+            }
+
+            &-info {
+                width: 60%;
+                margin-left: 1rem;
+            }
         }
     }
 }

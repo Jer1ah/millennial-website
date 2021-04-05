@@ -25,6 +25,7 @@
             border: none;
             padding: 1.25rem 0;
             width: 30rem;
+            max-width: 90%;
             border-radius: 7.5rem;
             text-indent: 2rem;
             outline: none;
@@ -74,6 +75,27 @@
         button {
             margin-left: .5rem;
             margin-top: 3rem;
+        }
+    }
+}
+
+@media(max-width: 715px) {
+    .newsletter__wrapper {
+        flex-direction: column;
+
+        h3 {
+            width: 75%;
+            top: 3rem;
+        }
+
+        input {
+            margin: 4.5rem 0 0 0;
+        }
+
+        button {
+            width: 30rem;
+            max-width: 90%;
+            margin: .5rem 0 0 0;
         }
     }
 }
