@@ -41,7 +41,7 @@
         }
 
         &-info {
-            padding: 2rem 2.5rem 3.5rem;
+            padding: 2rem 1.5rem 3.5rem;
 
             span {
                 @include displayFlex(row, center, flex-start);
@@ -57,7 +57,7 @@
             }
 
             h3 {
-                font-size: 1.65rem;
+                font-size: 1.5rem;
                 margin: .65rem 0;
                 font-weight: 900;
                 letter-spacing: .1rem;

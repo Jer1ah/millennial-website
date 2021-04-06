@@ -166,19 +166,21 @@ body {
 .services__list {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 75rem;
   max-width: 90%;
   margin: 10rem auto 7.5rem;
+  flex-wrap: wrap;
 }
 .services__listItem {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 22%;
+  width: 47.5%;
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 .services__listItem img {
   width: 3.5rem;
@@ -190,27 +192,24 @@ body {
   margin: 2rem 0 1rem;
 }
 .services__listItem p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 300;
   opacity: 0.85;
   line-height: 1.5rem;
 }
-
-@media (max-width: 875px) {
-  .services__list {
-    flex-wrap: wrap;
-  }
-  .services__listItem {
-    width: 45%;
-    margin-bottom: 3.5rem;
-  }
+.services__listItem:nth-child(3), .services__listItem:nth-child(4) {
+  margin-bottom: 0;
 }
+
 @media (max-width: 725px) {
   .services__listItem {
     width: 100%;
   }
   .services__listItem p {
-    width: 65%;
+    width: 85%;
+  }
+  .services__listItem:nth-child(3), .services__listItem:nth-child(4) {
+    margin-bottom: 3.5rem;
   }
 }
 .info {
@@ -485,7 +484,7 @@ body {
   width: 100%;
 }
 .blog__listItem-info {
-  padding: 2rem 2.5rem 3.5rem;
+  padding: 2rem 1.5rem 3.5rem;
 }
 .blog__listItem-info span {
   display: flex;
@@ -501,7 +500,7 @@ body {
   margin-right: 1.25rem;
 }
 .blog__listItem-info h3 {
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   margin: 0.65rem 0;
   font-weight: 900;
   letter-spacing: 0.1rem;

@@ -1,15 +1,17 @@
 .services {
     &__list {
-        @include displayFlex(row, center, space-between);
+        @include displayFlex(row, flex-start, space-between);
         width: 75rem;
         max-width: 90%;
         margin: 10rem auto 7.5rem;
+        flex-wrap: wrap;
     }
 
     &__listItem {
         @include displayFlex(column, center, flex-start);
-        width: 22%;
+        width: 47.5%;
         text-align: center;
+        margin-bottom: 3.5rem;
 
         img {
             width: 3.5rem;
@@ -23,35 +25,30 @@
         }
 
         p {
-            font-size: .9rem;
+            font-size: 1rem;
             font-weight: 300;
             opacity: .85;
             line-height: 1.5rem;
+        }
+
+        &:nth-child(3), &:nth-child(4) {
+            margin-bottom: 0;
         }
     }
 }
 
 //media queries
-@media(max-width: 875px) {
-    .services {
-        &__list {
-            flex-wrap: wrap;
-        }
-
-        &__listItem {
-            width: 45%;
-            margin-bottom: 3.5rem;
-        }
-    }
-}
-
 @media(max-width: 725px) {
     .services {
         &__listItem {
             width: 100%;
 
             p {
-                width: 65%;
+                width: 85%;
+            }
+
+            &:nth-child(3), &:nth-child(4) {
+                margin-bottom: 3.5rem;
             }
         }
     }
