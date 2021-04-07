@@ -40,6 +40,22 @@
             width: 100%;
         }
 
+        &-heading {
+            font-size: 1.35rem;
+            display: inline-block;
+            margin: .65rem 0;
+            font-weight: 900;
+            letter-spacing: .1rem;
+            color: lighten(black, 15%);
+            transition: all .25s;
+            text-decoration: none;
+
+            &:hover {
+                color: $main-orange;
+                cursor: pointer;
+            }
+        }
+
         &-info {
             padding: 2rem 1.5rem 3.5rem;
 
@@ -53,20 +69,6 @@
 
                 h5:first-child {
                     margin-right: 1.25rem;
-                }
-            }
-
-            h3 {
-                font-size: 1.5rem;
-                margin: .65rem 0;
-                font-weight: 900;
-                letter-spacing: .1rem;
-                color: lighten(black, 15%);
-                transition: all .25s;
-
-                &:hover {
-                    color: $main-orange;
-                    cursor: pointer;
                 }
             }
 
