@@ -863,12 +863,12 @@ body {
   }
 }
 .blog-post {
-  width: 60rem;
+  width: 65rem;
   max-width: 90%;
-  margin: 5rem auto;
+  margin: 5rem auto 0;
 }
 .blog-post-header {
-  height: 27.5rem;
+  height: 5.5rem;
 }
 .blog-post__header img {
   height: 30rem;
@@ -922,7 +922,7 @@ body {
   display: inline-block;
   font-size: 1.5rem;
   margin: 0 0 1.5rem 2rem;
-  color: #6173F1;
+  color: #E69B59;
   width: 35rem;
 }
 .developer-listItem p {
@@ -932,6 +932,103 @@ body {
 }
 .developer-listItem p:last-child {
   margin-bottom: 0;
+}
+
+.comment-section {
+  width: 65rem;
+  margin: 0 auto;
+  border-top: 0.05rem solid gray;
+}
+.comment-section__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.75rem 0 1.5rem;
+}
+.comment-section .comment-count, .comment-section .like-count, .comment-section .tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 1.75rem;
+}
+.comment-section .comment-count img, .comment-section .like-count img, .comment-section .tags img {
+  height: 1rem;
+  margin-right: 0.25rem;
+}
+.comment-section .comment-count h5, .comment-section .like-count h5 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.comment-section .tags-list {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.comment-section h3 {
+  font-size: 1.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 2rem 0 1rem;
+}
+.comment-section .comments {
+  margin-bottom: 5rem;
+}
+.comment-section .comment {
+  margin-bottom: 1rem;
+}
+.comment-section .comment-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.comment-section .comment-date {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.25rem 0 0.5rem;
+}
+.comment-section .comment-content {
+  font-size: 1rem;
+  line-height: 1.55rem;
+  font-weight: 300;
+}
+.comment-section .comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2.5rem;
+}
+.comment-section .comment-form textarea {
+  width: 35rem;
+  border: 0.1rem solid black;
+  height: 10rem;
+  margin-bottom: 0.75rem;
+  text-indent: 1rem;
+  outline: none;
+}
+.comment-section .comment-form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  padding-top: 0.75rem;
+}
+.comment-section .comment-form input {
+  width: 35rem;
+  border: 0.1rem solid black;
+  height: 3rem;
+  text-indent: 1rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+}
+.comment-section .comment-form button {
+  background-color: #E69B59;
+  border: none;
+  width: 7.5rem;
+  height: 3rem;
+  font-size: 0.75rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  outline: none;
 }
 
 .navigation {
