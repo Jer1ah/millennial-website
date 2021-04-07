@@ -1006,10 +1006,11 @@ body {
   margin-bottom: 0.75rem;
   text-indent: 1rem;
   outline: none;
+  font-family: "Roboto", sans-serif;
+  padding-top: 0.75rem;
 }
 .comment-section .comment-form textarea::placeholder {
   font-family: "Roboto", sans-serif;
-  padding-top: 0.75rem;
 }
 .comment-section .comment-form input {
   width: 35rem;
@@ -1029,6 +1030,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   outline: none;
+}
+.comment-section .comment-form button:hover {
+  cursor: pointer;
 }
 
 .navigation {

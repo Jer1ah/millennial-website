@@ -1,21 +1,36 @@
-//mobile drop-down nav functionality
+// comment functionality
+const blogPost1Controller = (() => {
+    const _button = document.querySelector('.comment-form button');
+    const _content = document.querySelector('.comment-form textarea');
+    const _name = document.querySelector('.comment-form input');
+    const _comments = document.querySelector('.comments');
 
-// const dropDownNavController = (function() {
-//     const _wrapper = document.querySelector('.navigation__wrapper');
-//     const _dropDown = document.querySelector('.drop-down');
-//     const _navButton = document.querySelector('.mobile-menu');
-//     const _navList = document.querySelector('.navigation__list');
-//     const _contactButton = document.querySelector('.navigation .contact-button');
+    _button.addEventListener('click', (event) => {
+        event.preventDefault();
 
-//     _navButton.addEventListener('click', () => {
-//         if(window.getComputedStyle(_navList).visibility === "hidden") {
-//             _dropDown.style.transform = 'scale(70)';
-//             _navList.style.visibility = 'visible';
-//             _contactButton.style.visibility = 'visible';
-//         } else {
-//             _dropDown.style.transform = 'scale(1)';
-//             _navList.style.visibility = 'hidden';
-//             _contactButton.style.visibility = 'hidden';
-//         }
-//     });
-// }());
+        const _newComment = document.createElement('DIV')
+        _newComment.classList.add('comment');
+
+        const _newCommentName = document.createElement('H4');
+        _newCommentName.classList.add('comment-name');
+        _newCommentName.innerText = _name.value;
+
+        const _newCommentDate = document.createElement('SPAN');
+        _newCommentDate.classList.add('comment-date');
+        _newCommentDate.innerText = moment().format('l');
+        
+        const _newCommentContent = document.createElement('P');
+        _newCommentContent.classList.add('comment-content');
+        _newCommentContent.innerText = _content.value;
+
+
+        _newComment.appendChild(_newCommentName);
+        _newComment.appendChild(_newCommentDate);
+        _newComment.appendChild(_newCommentContent);
+
+        _comments.appendChild(_newComment);
+
+        _content.value = "";
+        _name.value = "";
+    });
+})();
