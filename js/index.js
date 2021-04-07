@@ -3,46 +3,62 @@ const mobileNavigationController = (() => {
     const _mobileNav = document.querySelector('.navigation__wrapper');
     const _dropDown = document.querySelector('.drop-down');
     const _navButton = document.querySelector('.mobile-menu');
+    const _navButtons = document.querySelectorAll('.navigation__listItem a');
 
     _navButton.addEventListener('click', () => {
-        _dropDown.style.transform = "scale(75)";
-        _mobileNav.style.display = "flex";
-    })
+        if(window.getComputedStyle(_mobileNav).display === 'none') {
+            _dropDown.style.transform = "scale(65)";
+            _mobileNav.style.display = "flex";
+        } else {
+            _dropDown.style.transform = "scale(1)";
+            _mobileNav.style.display = "none";
+        }
+    });
+
+    for(let i = 0; i < _navButtons.length; i++) {
+        _navButtons[i].addEventListener('click', () => {
+            if(window.innerWidth <= 825) {
+                _dropDown.style.transform = "scale(1)";
+                _mobileNav.style.display = "none";
+            }
+        });
+    }
+
+    document.querySelector('.contact-button').addEventListener('click', () => {
+        if(window.innerWidth <= 825) {
+            _dropDown.style.transform = "scale(1)";
+            _mobileNav.style.display = "none";
+        }
+    });
+
+    window.onresize = () => {
+        if(window.innerWidth > 825) {
+            _dropDown.style.transform = "scale(1)";
+            _mobileNav.style.display = "flex";
+        } else {
+            _mobileNav.style.display = "none";
+            _dropDown.style.transform = "scale(1)";
+        }
+    }
 })();
 
-// comment functionality
-const blogPost1Controller = (() => {
-    const _button = document.querySelector('.comment-form button');
-    const _content = document.querySelector('.comment-form textarea');
-    const _name = document.querySelector('.comment-form input');
-    const _comments = document.querySelector('.comments');
+// form submit functionality
+const formSumbitController = (() => {
+    _contactForm = document.querySelector('.contact__form form');
+    _formButton = document.querySelector('.contact__form button');
+    _submittedTitle = document.querySelector('.contact__form h2');
+    
+    _formButton.addEventListener('click', () => {
+        _contactForm.style.display = "none";
+        _submittedTitle.style.display = "inline-block";
+    });
+})();
 
-    _button.addEventListener('click', (event) => {
-        event.preventDefault();
+// newsletter submit functionality 
+const newsletterSubmitController = (() => {
+    _newsletterButton = document.querySelector('.newsletter button');
 
-        const _newComment = document.createElement('DIV')
-        _newComment.classList.add('comment');
-
-        const _newCommentName = document.createElement('H4');
-        _newCommentName.classList.add('comment-name');
-        _newCommentName.innerText = _name.value;
-
-        const _newCommentDate = document.createElement('SPAN');
-        _newCommentDate.classList.add('comment-date');
-        _newCommentDate.innerText = moment().format('l');
-        
-        const _newCommentContent = document.createElement('P');
-        _newCommentContent.classList.add('comment-content');
-        _newCommentContent.innerText = _content.value;
-
-
-        _newComment.appendChild(_newCommentName);
-        _newComment.appendChild(_newCommentDate);
-        _newComment.appendChild(_newCommentContent);
-
-        _comments.appendChild(_newComment);
-
-        _content.value = "";
-        _name.value = "";
+    _newsletterButton.addEventListener('click', () => {
+        console.log('it worked');
     });
 })();

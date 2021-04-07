@@ -12,39 +12,35 @@
     <header class="header" id="home">
         <nav class="navigation">
             <a href="index.html" class="navigation__logo">Millennial</a>
-            <div class="drop-down">
-                <div class="navigation__wrapper">
-                    <ul class="navigation__list">
-                        <li class="navigation__listItem">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="navigation__listItem">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="navigation__listItem">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li class="navigation__listItem">
-                            <a href="#blog">Blog</a>
-                        </li>
-                        <li class="navigation__listItem">
-                            <a href="#ourTeam">Team</a>
-                        </li>
-                    </ul> <!-- .navigation__list end -->
-                    <ul class="social-media__list">
-                        <li class="social-media__listItem">
-                            <img src="images/twitter.svg" alt="Social Media Icon">
-                        </li>
-                        <li class="social-media__listItem">
-                            <img src="images/instagram.svg" alt="Social Media Icon">
-                        </li>
-                        <li class="social-media__listItem">
-                            <img src="images/loupe.svg" alt="Search Button Icon">
-                        </li>
-                    </ul> <!-- .social-media__list end -->
-                    <a href="#contact" class="contact-button">Contact Us</a>
-                </div> <!-- .navigation__wrapper -->
-            </div> <!-- .dropdown end -->
+            <div class="drop-down"></div> <!-- .dropdown end -->
+            <div class="navigation__wrapper">
+                <ul class="navigation__list">
+                    <li class="navigation__listItem">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li class="navigation__listItem">
+                        <a href="#ourTeam">Team</a>
+                    </li>
+                </ul> <!-- .navigation__list end -->
+                <ul class="social-media__list">
+                    <li class="social-media__listItem">
+                        <img src="images/twitter.svg" alt="Social Media Icon">
+                    </li>
+                    <li class="social-media__listItem">
+                        <img src="images/instagram.svg" alt="Social Media Icon">
+                    </li>
+                </ul> <!-- .social-media__list end -->
+                <a href="#contact" class="contact-button">Contact Us</a>
+            </div> <!-- .navigation__wrapper -->
             <div class="mobile-menu">
                 <img src="images/menu.svg" alt="Mobile Menu Icon">
             </div> <!-- .mobile-menu end -->
@@ -245,13 +241,14 @@
                 <p>To make an appointment or if you have any questions to ask our team</p>
             </div> <!-- .contact__info end -->
             <div class="contact__form">
-                <form action="#">
+                <h2>Form Submitted!</h2>
+                <form>
                     <div class="form__top">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="First Name" class="form__first-name">
+                        <input type="text" placeholder="Last Name" class="form__last-name">
                     </div> <!-- .form__top end -->
-                    <textarea name="" placeholder="Message"></textarea>
-                    <button>Submit</button>
+                    <textarea placeholder="Message"></textarea>
+                    <button type="button">Submit</button>
                 </form>
             </div> <!-- .contact__form end -->
         </div> <!-- .contact__wrapper end -->
