@@ -35,6 +35,7 @@
         box-shadow: 0px 0px 10px 0px #DADADA;
         transform: perspective(500px) translateZ(10px);
         transition: all .5s;
+        height: 33rem;
 
         img {
             width: 100%;
@@ -57,7 +58,7 @@
         }
 
         &-info {
-            padding: 2rem 1.5rem 3.5rem;
+            padding: 2rem 1.5rem 0;
 
             span {
                 @include displayFlex(row, center, flex-start);
@@ -106,6 +107,7 @@
             margin-bottom: 2.5rem;
             width: 100%;
             display: flex;
+            height: auto;
 
             img {
                 width: 50%;

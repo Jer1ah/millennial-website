@@ -9,7 +9,8 @@
 
     &__header {
         img {
-            height: 30rem;
+            width: 40rem;
+            max-width: 100%;
         }
 
         span {
@@ -47,6 +48,28 @@
         font-size: 1.15rem;
         font-weight: 300;
     }
+
+    section {
+        margin: 1.5rem 0;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: .5rem;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.75rem;
+        }
+    }
+
+    .paragraph {
+        font-size: 1.15rem;
+        line-height: 1.75rem;
+        display: inline-block;
+        margin: 1.5rem 0;
+    }
 }
 
 .developer-list {
@@ -68,6 +91,7 @@
             margin: 0 0 1.5rem 2rem;
             color: $main-orange;
             width: 35rem;
+            max-width: 85%;
         }
 
         p {
@@ -84,6 +108,7 @@
 
 .comment-section {
     width: 65rem;
+    max-width: 90%;
     margin: 0 auto;
     border-top: .05rem solid lighten(black, 50%);
 
@@ -150,6 +175,7 @@
 
             textarea {
                 width: 35rem;
+                max-width: 100%;
                 border: .1rem solid black;
                 height: 10rem;
                 margin-bottom: .75rem;
@@ -165,6 +191,7 @@
 
             input {
                 width: 35rem;
+                max-width: 100%;
                 border: .1rem solid black;
                 height: 3rem;
                 text-indent: 1rem;

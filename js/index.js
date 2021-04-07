@@ -1,3 +1,15 @@
+// mobile-navigation functionality
+const mobileNavigationController = (() => {
+    const _mobileNav = document.querySelector('.navigation__wrapper');
+    const _dropDown = document.querySelector('.drop-down');
+    const _navButton = document.querySelector('.mobile-menu');
+
+    _navButton.addEventListener('click', () => {
+        _dropDown.style.transform = "scale(75)";
+        _mobileNav.style.display = "flex";
+    })
+})();
+
 // comment functionality
 const blogPost1Controller = (() => {
     const _button = document.querySelector('.comment-form button');
