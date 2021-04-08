@@ -6,6 +6,10 @@
     max-width: 100%;
     margin: 3rem auto;
 
+    &__form {
+        position: relative;
+    }
+
     &__wrapper {
         @include displayFlex(row, center, space-between);
         width: 88%;
@@ -21,6 +25,17 @@
             width: 25rem;
         }
 
+        h5 {
+            position: absolute;
+            bottom: -1.85rem;
+            left: .5rem;
+            color: white;
+            font-size: 1rem;
+            transform: translateY(-3rem);
+            z-index: 1;
+            transition: all .35s;
+        }
+
         input {
             border: none;
             padding: 1.25rem 0;
@@ -29,6 +44,7 @@
             border-radius: 7.5rem;
             text-indent: 2rem;
             outline: none;
+            position: relative;
         }
 
         button {
@@ -41,6 +57,9 @@
             border: none;
             transition: all .15s;
             outline: none;
+            margin-left: .25rem;
+            position: relative;
+            z-index: 2;
 
             &:hover {
                 cursor: pointer;
@@ -51,13 +70,13 @@
 }
 
 //media queries 
-@media(max-width: 1085px) {
+@media(max-width: 1135px) {
     .newsletter__wrapper {
-        position: relative;
         padding: 5rem 0;
         width: auto;
         display: flex;
         justify-content: center;
+        position: relative;
 
         h3 {
             position: absolute;
@@ -82,19 +101,26 @@
 @media(max-width: 715px) {
     .newsletter__wrapper {
         flex-direction: column;
+        width: 90%;
 
         h3 {
             width: 75%;
             top: 3rem;
         }
 
+        &__form {
+            width: 10rem;
+            max-width: 90%;
+        }
+
+
         input {
             margin: 4.5rem 0 0 0;
+            min-width: 100%;
         }
 
         button {
-            width: 30rem;
-            max-width: 90%;
+            min-width: 100%;
             margin: .5rem 0 0 0;
         }
     }

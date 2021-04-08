@@ -57,8 +57,15 @@ const formSumbitController = (() => {
 // newsletter submit functionality 
 const newsletterSubmitController = (() => {
     _newsletterButton = document.querySelector('.newsletter button');
+    _newsletterInput = document.querySelector('.newsletter input');
+    _formSubmitted = document.querySelector('.newsletter h5');
 
     _newsletterButton.addEventListener('click', () => {
-        console.log('it worked');
+        _newsletterInput.value = "";
+        _formSubmitted.style.transform = "translateY(0)";
+
+        window.setTimeout(() => {
+            _formSubmitted.style.transform = "translateY(-3rem)";
+        }, 5000);
     });
 })();
