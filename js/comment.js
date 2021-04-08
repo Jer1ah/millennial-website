@@ -34,3 +34,25 @@ const blogPost1Controller = (() => {
         _name.value = "";
     });
 })();
+
+// comment and likes counter functionality 
+const commentCounterController = (() => {
+    _commentsList = document.querySelector('.comments');
+    _commentCount = document.querySelector('.comment-count h5');
+    _likesCount = document.querySelector('.like-count h5');
+    _likesButton = document.querySelector('.like-count');
+    _likesImage = document.querySelector('.like-count img');
+    _submitButton = document.querySelector('.comment-form button');
+    
+    _commentCount.innerText = _commentsList.children.length;
+    
+    _submitButton.addEventListener('click', () => {
+        _commentCount.innerText = _commentsList.children.length;
+    });
+
+    _likesButton.addEventListener('click', () => {
+        _likesCount.innerText = '7';
+        _likesCount.style.color = "#E69B59";
+        _likesImage.src = "images/heart-orange.svg";
+    });
+})();

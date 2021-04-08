@@ -66,6 +66,6 @@ const newsletterSubmitController = (() => {
 
         window.setTimeout(() => {
             _formSubmitted.style.transform = "translateY(-3rem)";
-        }, 5000);
+        }, 3500);
     });
 })();

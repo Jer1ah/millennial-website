@@ -990,6 +990,9 @@ body {
   font-size: 1rem;
   font-weight: 300;
 }
+.comment-section .like-count:hover {
+  cursor: pointer;
+}
 .comment-section .tags-list {
   font-size: 1rem;
   font-weight: 300;
@@ -1249,6 +1252,7 @@ body {
   text-indent: 2rem;
   outline: none;
   position: relative;
+  z-index: 2;
 }
 .newsletter__wrapper button {
   background-color: #41D096;
